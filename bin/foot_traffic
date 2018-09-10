@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+$: << File.expand_path('../../lib/', __FILE__)
+require 'foot_traffic'
+
+foot_traffic_analyzer = FootTraffic::Museum.new
+foot_traffic_analyzer.take_visitor_details
+foot_traffic_analyzer.stats_of_visitors_by_room
